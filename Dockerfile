@@ -26,6 +26,7 @@ RUN mkdir app
 WORKDIR plugin
 
 COPY plugin.go .
+COPY config.go .
 COPY go.mod .
 COPY go.sum .
 

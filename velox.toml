@@ -16,5 +16,5 @@ http = { ref = "master", owner = "roadrunner-server", repository = "http" }
 my_custom_plugin = { ref = "master", owner = "roadrunner-server", repository = "plugin_sample", replace = "/plugin" }
 
 [log]
-level = "debug"
+level = "info"
 mode = "development"

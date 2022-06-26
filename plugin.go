@@ -18,6 +18,7 @@ func (p *Plugin) Init(cfg config.Configurer, log *zap.Logger) error {
 		return errors.E(errors.Disabled)
 	}
 
+	p.cfg = &Config{}
 	err := cfg.UnmarshalKey(name, p.cfg)
 	if err != nil {
 		return err
