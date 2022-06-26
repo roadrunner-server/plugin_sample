@@ -5,6 +5,8 @@ import (
 	"go.uber.org/zap"
 )
 
+const name = "custom_plugin"
+
 type Plugin struct {
 	log *zap.Logger
 }
@@ -22,4 +24,8 @@ func (p *Plugin) Serve() chan error {
 
 func (p *Plugin) Stop() error {
 	return nil
+}
+
+func (p *Plugin) Name() string {
+	return name
 }
