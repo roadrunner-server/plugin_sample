@@ -23,11 +23,13 @@ ENV PATH=$PATH:/usr/local/go/bin
 WORKDIR app
 
 COPY velox.toml .
+COPY .rr.yaml .
 COPY php .
 
 ENV CGO_ENABLED=0
-RUN vx build -c velox.toml -o /usr/bin/
+RUN vx build -c velox.toml -o /usr/local/bin/
 
+RUN rr --version
 
 # use roadrunner binary as image entrypoint
-CMD ["/usr/bin/rr"]
+CMD ["/usr/local/bin/rr"]

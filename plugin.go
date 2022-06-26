@@ -9,7 +9,8 @@ type Plugin struct {
 	log *zap.Logger
 }
 
-func Init(cfg config.Configurer, log *zap.Logger) error {
+func (p *Plugin) Init(cfg config.Configurer, log *zap.Logger) error {
+	p.log = log
 	return nil
 }
 

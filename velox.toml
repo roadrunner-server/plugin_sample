@@ -13,7 +13,7 @@ token = ""
 logger = { ref = "master", owner = "roadrunner-server", repository = "logger" }
 server = { ref = "master", owner = "roadrunner-server", repository = "server" }
 http = { ref = "master", owner = "roadrunner-server", repository = "http" }
-http = { ref = "master", owner = "roadrunner-server", repository = "plugin_sample" }
+my_custom_plugin = { ref = "master", owner = "roadrunner-server", repository = "plugin_sample" }
 
 [log]
 level = "debug"

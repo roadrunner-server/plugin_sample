@@ -1,0 +1,11 @@
+version: '2.7'
+
+server:
+  command: "php php/worker.php"
+
+http:
+  address: 127.0.0.1:8080
+
+logs:
+  level: debug
+  mode: development

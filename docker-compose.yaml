@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  velox:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my_app
+    command: "rr serve -c .rr.yaml"
