@@ -1,10 +1,13 @@
 version: '2.7'
 
 server:
-  command: "php php/worker.php"
+  command: "php worker.php"
 
 http:
-  address: 127.0.0.1:8080
+  address: 0.0.0.0:8080
+
+custom_plugin:
+  say: "hello community ❤️"
 
 logs:
   level: debug
