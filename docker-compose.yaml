@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  velox:
+  my_custom_plugin:
     build:
       context: .
       dockerfile: Dockerfile
